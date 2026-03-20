@@ -1,0 +1,17 @@
+========================================
+  CoirFurnitures — Test Accounts
+========================================
+
+SELLER ACCOUNT
+--------------
+Email   : seller@coirnest.com
+Password: seller123
+Access  : http://127.0.0.1:8000/seller/dashboard
+
+BUYER ACCOUNT
+-------------
+Email   : buyer@coirnest.com
+Password: buyer123
+Access  : http://127.0.0.1:8000/shop
+
+========================================

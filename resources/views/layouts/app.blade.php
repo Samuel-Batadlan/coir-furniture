@@ -11,9 +11,8 @@
 </head>
 <body class="bg-[#FAF7F2] min-h-screen flex flex-col" style="font-family: 'DM Sans', sans-serif;">
 
-    {{-- Announcement Bar --}}
     <div class="bg-[#4A6741] text-white text-xs text-center py-1.5 px-4 tracking-wide">
-        🌿 Free delivery on orders over ₱5,000 &nbsp;|&nbsp; Eco-friendly coconut coir furniture, made in the Philippines
+    {{ \App\Models\StorefrontSetting::get('announcement_text', '🌿 Free delivery on orders over ₱5,000 | Eco-friendly coconut coir furniture, made in the Philippines') }}
     </div>
 
     {{-- Navbar --}}

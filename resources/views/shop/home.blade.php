@@ -15,7 +15,7 @@
                 Furniture rooted<br><span class="text-[#C4A882] italic">in nature.</span>
             </h1>
             <p class="text-[#9C8B75] text-base leading-relaxed mb-6 max-w-md">
-                Handcrafted from coconut coir fiber — durable, sustainable, and beautifully organic. Every piece tells the story of Filipino craftsmanship.
+                {{ \App\Models\StorefrontSetting::get('hero_subheadline', 'Handcrafted from coconut coir fiber — durable, sustainable, and beautifully organic.') }}
             </p>
             <div class="flex flex-wrap gap-3">
                 <a href="{{ route('shop.index') }}"

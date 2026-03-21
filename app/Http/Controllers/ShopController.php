@@ -9,7 +9,8 @@ class ShopController extends Controller
 {
     public function home()
     {
-        $featured = Product::where('is_featured', true)->latest()->take(8)->get();
+        $featuredCount = (int) \App\Models\StorefrontSetting::get('featured_count', '8');
+        $featured = Product::where('is_featured', true)->latest()->take($featuredCount)->get();
         return view('shop.home', compact('featured'));
     }
 

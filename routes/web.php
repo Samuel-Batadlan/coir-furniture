@@ -61,4 +61,9 @@ Route::middleware(['auth', 'seller'])->prefix('seller')->name('seller.')->group(
     // Order management
     Route::get('/orders', [App\Http\Controllers\Seller\OrderManagementController::class, 'index'])->name('orders.index');
     Route::put('/orders/{order}', [App\Http\Controllers\Seller\OrderManagementController::class, 'update'])->name('orders.update');
+    
+    // Storefront management
+    Route::get('/storefront', [App\Http\Controllers\Seller\StorefrontController::class, 'index'])->name('storefront.index');
+    Route::post('/storefront', [App\Http\Controllers\Seller\StorefrontController::class, 'update'])->name('storefront.update');
+    Route::post('/storefront/{product}/toggle', [App\Http\Controllers\Seller\StorefrontController::class, 'toggleFeatured'])->name('storefront.toggle');
 });
